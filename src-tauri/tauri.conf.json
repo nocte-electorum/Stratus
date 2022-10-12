@@ -23,11 +23,12 @@
       },
       "externalBin": [],
       "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
+        "icons/logo-64.ico",
+        "icons/logo-64.png",
+        "icons/logo-128.ico",
+        "icons/logo-128.png",
+        "icons/logo-256.ico",
+        "icons/logo-256.png"
       ],
       "identifier": "com.nocteelectorum.stratus",
       "longDescription": "",
