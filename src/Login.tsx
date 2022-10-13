@@ -8,7 +8,7 @@ async function try_login() {
     let userbox: HTMLInputElement = document.getElementById("login-namebox") as HTMLInputElement;
     let passbox: HTMLInputElement = document.getElementById("login-passbox") as HTMLInputElement;
     let username: string = userbox.textContent || "";
-    let password: string = userbox.textContent || "";
+    let password: string = passbox.textContent || "";
 
     let success: boolean = await invoke("try_login", { username: username, password: password });
     if (success) {
