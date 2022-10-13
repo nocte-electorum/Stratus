@@ -1,0 +1,15 @@
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8vh;
+}
+
+.textbox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 8px;
+    border: none;
+}
