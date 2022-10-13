@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 document.addEventListener("contextmenu", ev => ev.preventDefault());
 
 root.render(
-  <React.StrictMode>
-    <Login />
-  </React.StrictMode>
+    <React.StrictMode>
+        <Login />
+    </React.StrictMode>
 );
