@@ -19,7 +19,7 @@ async function try_login() {
     }
 }
 
-function App() {
+function App() : React.ReactElement {
     return <>
     <img className="logo" src={logo_img} height="120" alt="Image with logo and text saying stratus" />
     <input placeholder="Username" className="textbox username" id="login-namebox" />
