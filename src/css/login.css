@@ -13,3 +13,17 @@
     border-radius: 8px;
     border: none;
 }
+
+.username {
+    margin-top: 15vh;
+    background-color: rgb(220, 220, 220);
+    height: 5vh;
+    width: 20vw;
+}
+
+.password {
+    margin-top: 3vh;
+    background-color: rgb(220, 220, 220);
+    height: 5vh;
+    width: 20vw;
+}
