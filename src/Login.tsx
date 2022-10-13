@@ -21,7 +21,7 @@ async function try_login() {
 
 function App() {
     return <>
-    <img className="logo" src={logo_img} height="120" />
+    <img className="logo" src={logo_img} height="120" alt="Image with logo and text saying stratus" />
     <input placeholder="Username" className="textbox username" id="login-namebox" />
     <input placeholder="Password" className="textbox password" id="login-passbox" type="password" />
     <button onClick={try_login}>Login</button>
