@@ -2,6 +2,7 @@ import React from 'react';
 import './css/login.css';
 import { invoke } from '@tauri-apps/api';
 import logo_img from './assets/images/logo-full.png';
+import { router } from "./index";
 
 
 async function try_login() {
@@ -14,7 +15,7 @@ async function try_login() {
     let errortext: HTMLParagraphElement = document.getElementById("errortext") as HTMLParagraphElement;
     if (success) {
         errortext.hidden = false;
-        // Switch screens here
+        router.navigate("/dash");
     } else {
         errortext.hidden = true;
     }
