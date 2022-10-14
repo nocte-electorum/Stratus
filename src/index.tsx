@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 
 document.addEventListener("contextmenu", ev => ev.preventDefault());
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
     {
         path: "/",
         element: Login()
