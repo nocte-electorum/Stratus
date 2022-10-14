@@ -24,7 +24,7 @@ async function try_login() {
 function App() : React.ReactElement {
     return <>
     <img className="logo" src={logo_img} height="120" alt="Image with logo and text saying stratus" />
-    <input placeholder="Username" className="textbox username" id="login-namebox" />
+    <input placeholder="Name" className="textbox username" id="login-namebox" />
     <input placeholder="Password" className="textbox password" id="login-passbox" type="password" />
     <button onClick={try_login}>Login</button>
     <p className="error-text" id="errortext" hidden={true}>Invalid username or password!</p>
