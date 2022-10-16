@@ -11,6 +11,7 @@ fn main() {
             commands::try_login,
             commands::is_registered,
             commands::try_register,
+            commands::log
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
