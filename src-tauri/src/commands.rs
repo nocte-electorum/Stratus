@@ -14,3 +14,8 @@ pub fn is_registered() -> bool {
 pub fn try_register(name: String, password: String) -> bool {
     account::try_register(&name, &password).is_ok()
 }
+
+#[tauri::command]
+pub fn log(s: String) {
+    println!("{s}");
+}
