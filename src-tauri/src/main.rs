@@ -3,6 +3,7 @@
     windows_subsystem = "windows"
 )]
 mod commands;
+mod functions;
 
 fn main() {
     tauri::Builder::default()
