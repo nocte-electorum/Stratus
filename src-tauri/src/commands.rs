@@ -19,3 +19,8 @@ pub fn try_register(name: String, password: String) -> bool {
 pub fn log(s: String) {
     println!("{s}");
 }
+
+#[tauri::command]
+pub fn get_name() -> String {
+    account::get_name()
+}
