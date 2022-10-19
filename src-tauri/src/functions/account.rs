@@ -38,6 +38,8 @@ pub fn try_login(name: &str, password: &str) -> Result<(), anyhow::Error> {
     let file_path = get_data_dir().join(".hp");
     if !file_path.exists() {
         return Err(anyhow!("Credentials file doesn't exist!"));
+    } else {
+        return Err(anyhow!("Credentials file doesn't exist!"));
     }
 
     let contents: String = std::fs::read_to_string(&file_path)?;
