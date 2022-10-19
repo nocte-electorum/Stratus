@@ -55,9 +55,13 @@ pub fn try_login(name: &str, password: &str) -> Result<(), anyhow::Error> {
 pub fn get_name() -> String {
     let file_path = get_data_dir().join(".hp");
 
-    let contents: String = std::fs::read_to_string(&file_path).unwrap();
-    let lines: Vec<&str> = contents.lines().collect();
-    let (found_name, hashed_password): (&str, &str) = (lines[0], lines[1]);
+    let contents: String = std::fs::read_to_string(&file_path).unwrap_or_else(|_| "".into());
+    if contents != "" {
+        let lines: Vec<&str> = contents.lines().collect();
+        let (found_name, hashed_password): (&str, &str) = (lines[0], lines[1]);
 
-    found_name.into()
+        found_name.into()
+    } else {
+        contents
+    }
 }
